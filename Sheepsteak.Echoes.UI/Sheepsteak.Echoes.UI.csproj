@@ -97,7 +97,10 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="Assets\Converters\DateTimeOffsetToRelativeTimeConverter.cs" />
+    <Compile Include="Assets\Converters\StringToUpperCaseConverter.cs" />
     <Compile Include="Features\Articles\ArticlePageViewModel.cs" />
+    <Compile Include="Features\Articles\CommentsPageViewModel.cs" />
     <Compile Include="Features\Main\LatestViewModel.cs" />
     <Compile Include="Features\Main\MainPageViewModel.cs" />
     <Compile Include="Features\Main\TopViewModel.cs" />
@@ -132,6 +135,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Features\Articles\ArticlePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\Articles\CommentsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,6 +180,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Images\chat.png" />
     <Content Include="Assets\Images\settings.png" />
     <Content Include="Assets\Images\web.png" />
     <Content Include="Assets\Images\text.png" />
